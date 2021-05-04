@@ -1,9 +1,16 @@
+import json
+import pandas as pd
 import pickle
-
-with open('train.pickle', 'rb') as f:
-    clf = pickle.load(f)
+from autograde_lib import select_grade
 
 # Predict the response for test dataset
-X_test = [[35.5,17,69.2,83]]
-y_pred = clf.predict(X_test)
-print(y_pred)
+f = open('input.json',)
+data_json = json.load(f)
+
+# Copy from here
+selected_grade = select_grade(data_json)
+
+retJSON = {
+    "selected_grade": selected_grade
+            }
+# To here

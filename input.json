@@ -1,0 +1,14 @@
+{
+  "specification_input":[
+    {
+      "surf_concen_0.01g/l": 30,
+      "surfconc_uom": "mN/m",
+      "cmc": 12,
+      "cmc_uom": "mg/l",
+      "EO_content": 61,
+      "eo_uom": "%",
+      "oh_value": 112,
+      "ohvalue_uom": "mg KOH/g"
+    }
+  ]
+}
